@@ -1,0 +1,133 @@
+@import 'reset.css';
+@import '../node_modules/@fortawesome/fontawesome-free/css/fontawesome.min.css';
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700;900&display=swap');
+
+body {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #3d3d44;
+}
+
+.section {
+  justify-content: space-between;
+  padding: 50px;
+  max-width: 500px;
+  margin: 0 auto;
+
+  h1 {
+    font-size: 100px;
+    font-weight: 900;
+    color: red;
+    margin-left: -6px;
+  }
+
+  h3 {
+    font-size: 24px;
+  }
+
+  h2 {
+    font-size: 18px;
+    line-height: 1.5;
+    padding-right: 150px;
+  }
+}
+
+.section--full {
+  margin: 0 auto;
+}
+
+.section--grey {
+  background: #fafbfd;
+}
+
+.jumbo__detail {
+  background: white;
+  border-radius: 15px;
+  line-height: 1.5;
+  position: relative;
+  z-index: 5;
+  font-size: 16px;
+  white-space: normal;
+  margin-top: 20px;
+}
+
+.about__title {
+  color: red;
+  font-size: 16px;
+  margin-top: 50px;
+  line-height: 1.5;
+}
+
+.about__feature {
+  line-height: 1.5;
+  font-size: 16px;
+  margin-top: 20px;
+
+  i {
+    margin-left: -24px;
+  }
+
+  span {
+    font-weight: 700;
+  }
+}
+
+.section__header {
+  color: #ccc;
+  margin: 50px 0;
+  font-size: 20px;
+  border-bottom: 1px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.skills {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.skill__container {
+  width: 30%;
+  margin-bottom: 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  div {
+    justify-content: space-between;
+    flex: 1;
+  }
+
+  p {
+    font-size: 11px;
+  }
+
+  h5 {
+    font-size: 12px;
+    font-weight: 700;
+  }
+}
+
+.skill__icon {
+  box-sizing: border-box;
+  padding: 7px;
+  width: 40px;
+  background: white;
+  box-shadow: 0 0 10px rgb(0 0 0 / 15%);
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.with--me {
+  position: relative;
+}
+
+.me {
+  width: 200px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  //border-radius: 100%;
+}
