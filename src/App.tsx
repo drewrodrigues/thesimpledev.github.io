@@ -28,9 +28,11 @@ function App() {
         <aside className="jumbo__aside">
           <h3>👋🏽 Hey there, I'm</h3>
           <h1>DREW</h1>
-          <h2>An awesome Software Engineer specializing in web development.</h2>
+          <h2>an awesome Software Engineer specializing in web development.</h2>
 
-          {/*<img src={me} alt="Me" />*/}
+          <button>📜 Grab My Resume</button>
+          <button>📞 Call Me</button>
+          <button>📬 Email Me</button>
 
           <h4 className="section__header with--me">
             About Me
