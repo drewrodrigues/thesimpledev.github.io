@@ -33,6 +33,7 @@ function App() {
           <button>📜 Grab My Resume</button>
           <button>📞 Call Me</button>
           <button>📬 Email Me</button>
+          <button>💻 Github</button>
 
           <h4 className="section__header with--me">
             About Me

@@ -127,9 +127,11 @@ body {
   bottom: 0;
   right: 0;
   //border-radius: 100%;
+  z-index: -1;
 }
 
 button {
+  cursor: pointer;
   margin-top: 15px;
   margin-right: 5px;
   border: none;
