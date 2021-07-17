@@ -21,13 +21,8 @@ import express from './express.png';
 import gcp from './gcp.png';
 import me from './me.png';
 import Experience from "./experience";
-import {experiences, testimonials} from './constants';
+import {experiences, projects, testimonials} from './constants';
 import Testimonial from "./testomonial";
-import el from './engineerLiving.png';
-import fe from './Screen Shot 2021-07-16 at 9.47.12 PM.png';
-import at from './agileTrack.png';
-import tm from './tripmates.png';
-import bj from './betterjobs.png';
 import Project from "./project";
 
 function App() {
@@ -239,37 +234,7 @@ function App() {
 
       <section className="section section__projects">
         <h4 className="section__header">Projects</h4>
-
-        <Project />
-
-        <div className="project">
-          <img src={el} alt=""/>
-          <h6>Title Here</h6>
-        </div>
-
-        <div className="project">
-          <img src={at} alt=""/>
-          <h6>Title Here</h6>
-
-        </div>
-
-        <div className="project">
-          <img src={tm} alt=""/>
-          <h6>Title Here</h6>
-
-        </div>
-
-        <div className="project">
-          <img src={bj} alt=""/>
-          <h6>Title Here</h6>
-
-        </div>
-
-        <div className="project">
-          <img src={fe} alt=""/>
-          <h6>Title Here</h6>
-
-        </div>
+        {projects.map(project => <Project {...project} />)}
       </section>
     </div>
   );

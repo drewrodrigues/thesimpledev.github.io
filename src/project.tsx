@@ -1,33 +1,29 @@
-import vapor from "./vapor.png";
 import React from "react";
 
-export default function Project() {
+export interface ProjectProps {
+  technologies: string[];
+  image: string;
+  title: string;
+  subtitle: string;
+  detail: string;
+  flag?: string;
+  codeUrl?: string;
+  liveUrl?: string;
+}
+
+export default function Project({technologies, image, title, subtitle, detail, codeUrl, flag, liveUrl}: ProjectProps) {
   return <>
     <div className="project">
       <ul className="project__technologies">
-        <li className="project__technology">MongoDB</li>
-        <li className="project__technology">Express</li>
-        <li className="project__technology">JavaScript</li>
-        <li className="project__technology">React</li>
-        <li className="project__technology">AXIOS</li>
-        <li className="project__technology">Steam API</li>
-        <li className="project__technology">OAUTH</li>
+        {technologies.map(technology => <li className="project__technology">{technology}</li>)}
       </ul>
-      <img src={vapor} alt=""/>
-      <p className="project__tag">👥 Team Based Project</p>
-      <h6 className="project__title">Vapor</h6>
-      <p className="project__subtitle">Aggregated game recommendations</p>
-      <p className="project__detail">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium aperiam autem delectus
-        distinctio dolorem ipsam magni nam odio officia optio pariatur quia quibusdam quod, rem rerum, sed sunt
-        temporibus.
-      </p>
-      <p className="project__detail">
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium aperiam autem delectus
-        distinctio dolorem ipsam magni nam odio officia optio pariatur quia quibusdam quod, rem rerum, sed sunt
-        temporibus.
-      </p>
-      <button>Code</button>
-      <button>Check It Out</button>
+      <img src={image} alt="" className="project__image" />
+      <p className="project__tag">{flag}</p>
+      <h6 className="project__title">{title}</h6>
+      <p className="project__subtitle">{subtitle}</p>
+      <p className="project__detail">{detail}</p>
+      <a href={codeUrl}>Code</a>
+      <a href={liveUrl}>Check It Out</a>
     </div>
   </>
 }

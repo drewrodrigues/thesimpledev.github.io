@@ -2,9 +2,19 @@ import {ExperienceProps} from "./experience";
 import ms from './ms.png';
 import vs from './vs.jpeg';
 import aa from './Appacademylogo.png';
-import Testimonial, {TestimonialProps} from "./testomonial";
+import vapor from "./vapor.png";
+import lobe from './lobe.png';
+import el from './engineerLiving.png';
+import fe from './Screen Shot 2021-07-16 at 9.47.12 PM.png';
+import at from './agileTrack.png';
+import tm from './tripmates.png';
+import bj from './betterjobs.png';
+import scrabble from './scrabble.png';
+import instadate from './instadate.jpg';
+import {TestimonialProps} from "./testomonial";
 import aa_pic from "./aa_pic.jpeg";
 import React from "react";
+import {ProjectProps} from "./project";
 
 export const experiences: ExperienceProps[] = [
   {
@@ -60,5 +70,118 @@ export const testimonials: TestimonialProps[] = [
         
         You are able to dive deep and learn a ton about a given area and execute really well. You have shown great diversity and ability to tackle problems thrown at you, and communicate findings and progress really well to the whole team. I love how you ask questions when you need to as well, not only for clarification on details but also for reasoning behind things. You are able to bring a great perspective to building features and have an amazing collaborative attitude.`,
     photo: aa_pic
+  }
+];
+
+export const projects: ProjectProps[] = [
+  {
+    title: 'Lobe',
+    flag: '👥 Work Platform',
+    technologies: [
+      'MongoDB',
+      'Express',
+      'JavaScript',
+      'React',
+      'AXIOS',
+      'Steam API',
+      'OAUTH'
+    ],
+    subtitle: 'Aggregated game recommendations',
+    detail: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium aperiam autem delectus distinctio dolorem ipsam magni nam odio officia optio pariatur quia quibusdam quod, rem rerum, sed sunttemporibus.',
+    image: lobe,
+  },
+  {
+    title: 'Better Jobs',
+    flag: '👨🏽‍💻 Personal Product',
+    technologies: [
+      'Sinatra',
+      'Ruby',
+      'Heroku',
+      'HTML',
+      'CSS',
+      'JavaScript',
+      'Silenium Webdriver',
+      'Chron Jobs'
+    ],
+    subtitle: 'Aggregated game recommendations',
+    detail: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium aperiam autem delectus distinctio dolorem ipsam magni nam odio officia optio pariatur quia quibusdam quod, rem rerum, sed sunttemporibus.',
+    image: bj,
+  },
+  {
+    title: 'Tripmates',
+    flag: '👨🏽‍💻 Personal Product',
+    technologies: [],
+    subtitle: 'Aggregated game recommendations',
+    detail: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium aperiam autem delectus distinctio dolorem ipsam magni nam odio officia optio pariatur quia quibusdam quod, rem rerum, sed sunttemporibus.',
+    image: tm,
+  },
+  {
+    title: 'Flippin Easy',
+    flag: '👨🏽‍💻 Personal Product',
+    technologies: [
+      'Express',
+      'Stripe API',
+      'Heroku',
+      'HTML',
+      'CSS',
+      'JavaScript',
+    ],
+    subtitle: 'Aggregated game recommendations',
+    detail: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium aperiam autem delectus distinctio dolorem ipsam magni nam odio officia optio pariatur quia quibusdam quod, rem rerum, sed sunttemporibus.',
+    image: fe,
+  },
+  {
+    title: 'Instadate',
+    flag: '👥 Personal Partner Project',
+    technologies: [
+      'React Native',
+      'HTML',
+      'CSS',
+      'Ruby',
+      'Ruby on Rails',
+    ],
+    subtitle: 'Aggregated game recommendations',
+    detail: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium aperiam autem delectus distinctio dolorem ipsam magni nam odio officia optio pariatur quia quibusdam quod, rem rerum, sed sunttemporibus.',
+    image: instadate,
+  },
+  {
+    title: 'Scrabble',
+    flag: '👥 Personal Partner Project',
+    technologies: [],
+    subtitle: 'Aggregated game recommendations',
+    detail: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium aperiam autem delectus distinctio dolorem ipsam magni nam odio officia optio pariatur quia quibusdam quod, rem rerum, sed sunttemporibus.',
+    image: scrabble,
+  },
+  {
+    title: 'Vapor',
+    flag: '👥 Bootcamp Team Project',
+    technologies: [
+      'MongoDB',
+      'Express',
+      'JavaScript',
+      'React',
+      'AXIOS',
+      'Steam API',
+      'OAUTH'
+    ],
+    subtitle: 'Aggregated game recommendations',
+    detail: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium aperiam autem delectus distinctio dolorem ipsam magni nam odio officia optio pariatur quia quibusdam quod, rem rerum, sed sunttemporibus.',
+    image: vapor,
+  },
+  {
+    title: 'Agile Tracker',
+    flag: '👥 Bootcamp Personal Project',
+    technologies: [],
+    subtitle: 'Aggregated game recommendations',
+    detail: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium aperiam autem delectus distinctio dolorem ipsam magni nam odio officia optio pariatur quia quibusdam quod, rem rerum, sed sunttemporibus.',
+    image: at,
+  },
+  {
+    title: 'Engineer Living',
+    flag: '👥 Bootcamp Personal Project',
+    technologies: [],
+    subtitle: 'Aggregated game recommendations',
+    detail: 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus accusantium aperiam autem delectus distinctio dolorem ipsam magni nam odio officia optio pariatur quia quibusdam quod, rem rerum, sed sunttemporibus.',
+    image: el,
   }
 ]

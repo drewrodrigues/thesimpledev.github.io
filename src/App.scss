@@ -53,7 +53,7 @@ body {
 }
 
 .project {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .project__title {
@@ -75,12 +75,15 @@ body {
   flex-wrap: wrap-reverse;
 }
 
+.project__image {
+  box-shadow: 0 0 10px 5px rgb(0 0 0 / 7%);
+}
+
 .project__technology {
   font-size: 8px;
   font-weight: 700;
   padding: 5px 10px;
   background: #efefef;
-  border: 1px solid #ddd;
   border-radius: 5px;
   margin-right: 5px;
   margin-bottom: 5px;
