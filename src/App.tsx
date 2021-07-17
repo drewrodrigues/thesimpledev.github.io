@@ -20,6 +20,15 @@ import mongo from './mongo.png';
 import express from './express.png';
 import gcp from './gcp.png';
 import me from './me.png';
+import Experience from "./experience";
+import {experiences, testimonials} from './constants';
+import Testimonial from "./testomonial";
+import el from './engineerLiving.png';
+import fe from './Screen Shot 2021-07-16 at 9.47.12 PM.png';
+import at from './agileTrack.png';
+import tm from './tripmates.png';
+import bj from './betterjobs.png';
+import Project from "./project";
 
 function App() {
   return (
@@ -41,24 +50,36 @@ function App() {
           </h4>
 
           <h5 className="about__title">My Background</h5>
-          <p className="jumbo__detail">Over the last few years I’ve worked with small to medium-sized businesses all the way up to giants like Microsoft. I've also taught at App Academy, the most prestigious web development bootcamp in the United States.</p>
+          <p className="jumbo__detail">Over the last few years I’ve worked with small to medium-sized businesses all the
+            way up to giants like Microsoft. I've also taught at App Academy, the most prestigious web development
+            bootcamp in the United States.</p>
           <p className="jumbo__detail">
-            As a software engineer, I’ve helped build everything from complex UIs and animations, web scrapers, to full stack web and mobile applications, working alone or as part of a team. And if you’ve attended an online college, you’ve likely used code I’ve worked on.
+            As a software engineer, I’ve helped build everything from complex UIs and animations, web scrapers, to full
+            stack web and mobile applications, working alone or as part of a team. And if you’ve attended an online
+            college, you’ve likely used code I’ve worked on.
           </p>
 
           <h5 className="about__title">Features</h5>
           <ul className="about__features">
-            <li className="about__feature"><i>🧪</i> <span>I love testing</span> code as it tends to be much cleaner and more well thought out.</li>
-            <li className="about__feature"><i>🏅</i> <span>I'm well rounded</span> whether it's the frontend, backend or design.</li>
-            <li className="about__feature"><i>🎨</i> <span>I have an eye for design</span> and enjoy building not only functional, but beautiful products.</li>
-            <li className="about__feature"><i>😊</i> <span>I love working with others</span> because we can accomplish more and inspire each other along the way.</li>
+            <li className="about__feature"><i>🧪</i> <span>I love testing</span> code as it tends to be much cleaner and
+              more well thought out.
+            </li>
+            <li className="about__feature"><i>🏅</i> <span>I'm well rounded</span> whether it's the frontend, backend or
+              design.
+            </li>
+            <li className="about__feature"><i>🎨</i> <span>I have an eye for design</span> and enjoy building not only
+              functional, but beautiful products.
+            </li>
+            <li className="about__feature"><i>😊</i> <span>I love working with others</span> because we can accomplish
+              more and inspire each other along the way.
+            </li>
           </ul>
         </aside>
       </section>
 
       <section className="section">
         <h4 className="section__header">Skills</h4>
-        
+
         <ul className="skills">
           <li className="skill__container">
             <img className="skill__icon" src={javascript} alt="JavaScript"/>
@@ -207,15 +228,48 @@ function App() {
       </section>
 
       <section className="section">
-        <h4 className="section__header">Adjacent Skills</h4>
-      </section>
-
-      <section className="section">
         <h4 className="section__header">Experience</h4>
+        {experiences.map(experience => <Experience {...experience} />)}
       </section>
 
-      <section className="section">
+      <section className="section section__testimonial">
+        <h4 className="section__header">Testimonials</h4>
+        {testimonials.map(testimonial => <Testimonial {...testimonial} />)}
+      </section>
+
+      <section className="section section__projects">
         <h4 className="section__header">Projects</h4>
+
+        <Project />
+
+        <div className="project">
+          <img src={el} alt=""/>
+          <h6>Title Here</h6>
+        </div>
+
+        <div className="project">
+          <img src={at} alt=""/>
+          <h6>Title Here</h6>
+
+        </div>
+
+        <div className="project">
+          <img src={tm} alt=""/>
+          <h6>Title Here</h6>
+
+        </div>
+
+        <div className="project">
+          <img src={bj} alt=""/>
+          <h6>Title Here</h6>
+
+        </div>
+
+        <div className="project">
+          <img src={fe} alt=""/>
+          <h6>Title Here</h6>
+
+        </div>
       </section>
     </div>
   );

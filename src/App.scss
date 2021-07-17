@@ -12,7 +12,7 @@ body {
 
 .section {
   justify-content: space-between;
-  padding: 50px;
+  padding: 0 50px;
   max-width: 500px;
   margin: 0 auto;
 
@@ -34,6 +34,75 @@ body {
   }
 }
 
+.section--wide {
+  margin: 0 auto;
+}
+
+.section__projects {
+  img {
+    border-radius: 10px;
+    width: 100%;
+    margin-top: 10px;
+  }
+}
+
+.project__tag {
+  float: right;
+  margin-top: 25px;
+  font-size: 11px;
+}
+
+.project {
+  margin-bottom: 50px;
+}
+
+.project__title {
+  margin-top: 20px;
+  font-weight: 900;
+  font-size: 42px;
+}
+
+.project__subtitle {
+  font-size: 13px;
+  margin-top: 5px;
+  line-height: 1.5;
+  margin-bottom: 25px;
+  max-width: 350px;
+}
+
+.project__technologies {
+  display: flex;
+  flex-wrap: wrap-reverse;
+}
+
+.project__technology {
+  font-size: 8px;
+  font-weight: 700;
+  padding: 5px 10px;
+  background: #efefef;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.project__detail {
+  line-height: 1.5;
+  white-space: pre-line;
+  margin-bottom: 20px;
+}
+
+.section__testimonial {
+  img {
+    width: 100%;
+  }
+
+  p {
+    line-height: 1.5;
+  }
+}
+
 .section--full {
   margin: 0 auto;
 }
@@ -51,6 +120,52 @@ body {
   font-size: 16px;
   white-space: normal;
   margin-top: 20px;
+}
+
+.jumbo__aside {
+  padding-top: 50px;
+}
+
+.experience {
+  margin-bottom: 50px;
+
+  &:last-of-type {
+    margin-bottom: 0;
+  }
+}
+
+.experience__header {
+  align-items: center;
+  display: flex;
+  margin-bottom: 30px;
+  flex: 1;
+
+  img {
+    margin-right: 20px;
+    width: 60px;
+  }
+
+  p {
+    justify-self: flex-end;
+    flex: 1;
+    text-align: right;
+    font-size: 12px;
+  }
+}
+
+.experience__company {
+  color: #777;
+  font-size: 14px;
+}
+
+.experience__title {
+  font-weight: 900;
+  margin-bottom: 5px;
+}
+
+.experience__detail {
+  line-height: 1.5;
+  white-space: pre-line;
 }
 
 .about__title {
