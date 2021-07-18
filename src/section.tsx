@@ -1,7 +1,7 @@
 import React from "react";
 
 interface SectionProps {
-  children: JSX.Element | JSX.Element[];
+  children: React.ReactNode;
   title: string;
 }
 

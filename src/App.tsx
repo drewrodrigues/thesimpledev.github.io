@@ -21,8 +21,7 @@ import express from './express.png';
 import gcp from './gcp.png';
 import me from './me.png';
 import Experience from "./experience";
-import {experiences, projects, testimonials} from './constants';
-import Testimonial from "./testomonial";
+import {experiences, projects} from './constants';
 import Project from "./project";
 import { Section } from './section';
 
@@ -230,6 +229,10 @@ function App() {
       <Section title="Projects">
         {projects.map(project => <Project {...project} />)}
       </Section>
+
+      <footer className="footer">
+        👋🏽 Have a good one!
+      </footer>
     </div>
   );
 }
