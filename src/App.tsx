@@ -24,6 +24,7 @@ import Experience from "./experience";
 import {experiences, projects, testimonials} from './constants';
 import Testimonial from "./testomonial";
 import Project from "./project";
+import { Section } from './section';
 
 function App() {
   return (
@@ -222,20 +223,13 @@ function App() {
         </ul>
       </section>
 
-      <section className="section">
-        <h4 className="section__header">Experience</h4>
+      <Section title="Experience">
         {experiences.map(experience => <Experience {...experience} />)}
-      </section>
+      </Section>
 
-      <section className="section section__testimonial">
-        <h4 className="section__header">Testimonials</h4>
-        {testimonials.map(testimonial => <Testimonial {...testimonial} />)}
-      </section>
-
-      <section className="section section__projects">
-        <h4 className="section__header">Projects</h4>
+      <Section title="Projects">
         {projects.map(project => <Project {...project} />)}
-      </section>
+      </Section>
     </div>
   );
 }

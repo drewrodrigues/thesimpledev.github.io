@@ -80,7 +80,7 @@ body {
 }
 
 .project__technology {
-  font-size: 8px;
+  font-size: 7px;
   font-weight: 700;
   padding: 5px 10px;
   background: #efefef;
@@ -96,7 +96,7 @@ body {
   margin-bottom: 20px;
 }
 
-.section__testimonial {
+.section__testimonials {
   img {
     width: 100%;
   }
@@ -248,7 +248,11 @@ body {
   z-index: -1;
 }
 
-button {
+button,
+a {
+  color: initial;
+  text-decoration: none;
+  background: #efefef;
   cursor: pointer;
   margin-top: 15px;
   margin-right: 5px;

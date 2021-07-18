@@ -5,9 +5,9 @@ export interface ProjectProps {
   image: string;
   title: string;
   subtitle: string;
-  detail: string;
+  detail?: string;
   flag?: string;
-  codeUrl?: string;
+  codeUrl?: string | string[];
   liveUrl?: string;
 }
 
@@ -21,9 +21,9 @@ export default function Project({technologies, image, title, subtitle, detail, c
       <p className="project__tag">{flag}</p>
       <h6 className="project__title">{title}</h6>
       <p className="project__subtitle">{subtitle}</p>
-      <p className="project__detail">{detail}</p>
-      <a href={codeUrl}>Code</a>
-      <a href={liveUrl}>Check It Out</a>
+      {detail && <p className="project__detail">{detail}</p>}
+      {codeUrl && (Array.isArray(codeUrl) ? codeUrl : [codeUrl]).map(url => <a href={url} target="_blank" rel="noreferrer">💻 Code</a>)}
+      {liveUrl && <a href={liveUrl} target="_blank" rel="noreferrer">👀 Check It Out</a>}
     </div>
   </>
 }
